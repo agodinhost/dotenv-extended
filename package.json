@@ -1,6 +1,6 @@
 {
   "name": "@gec.js/dotenv-extended",
-  "version": "2.9.1",
+  "version": "2.9.2",
   "description": "A module for loading .env files and optionally loading defaults and a schema for validating all values are present.",
   "scripts": {
     "test": "npm run build && cd test && nyc --reporter=lcovonly mocha --require esm *.spec.js",
@@ -26,7 +26,7 @@
   "types": "dotenv-extended.d.ts",
   "bin": "lib/bin/index.js",
   "files": [
-    "index.js"
+    "lib/*.js"
   ],
   "engines": {
     "node": ">=6"
