@@ -2,13 +2,6 @@
   "name": "@gec.js/dotenv-extended",
   "version": "2.9.1",
   "description": "A module for loading .env files and optionally loading defaults and a schema for validating all values are present.",
-  "repository": "git@github.com:keithmorris/node-dotenv-extended.git",
-  "main": "lib/index.js",
-  "types": "dotenv-extended.d.ts",
-  "bin": "lib/bin/index.js",
-  "engines": {
-    "node": ">=6"
-  },
   "scripts": {
     "test": "npm run build && cd test && nyc --reporter=lcovonly mocha --require esm *.spec.js",
     "report": "nyc report",
@@ -22,7 +15,33 @@
     "environment"
   ],
   "author": "Keith Morris <standupbass@gmail.com> (http://standupbass.wordpress.com/)",
+  "private": false,
   "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+
+  "main": "lib/index.js",
+  "types": "dotenv-extended.d.ts",
+  "bin": "lib/bin/index.js",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=6"
+  },
+  
+  "homepage": "https://github.com/agodinhost/dotenv-extended",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agodinhost/dotenv-extended.git",
+    "directory": "react/prettier-config"
+  },
+  "bugs": {
+    "url": "https://github.com/agodinhost/dotenv-extended/issues"
+  },
+
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
