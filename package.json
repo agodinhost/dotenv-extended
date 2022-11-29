@@ -1,6 +1,6 @@
 {
   "name": "@gec.js/dotenv-extended",
-  "version": "2.9.2",
+  "version": "2.9.3",
   "description": "A module for loading .env files and optionally loading defaults and a schema for validating all values are present.",
   "scripts": {
     "test": "npm run build && cd test && nyc --reporter=lcovonly mocha --require esm *.spec.js",
